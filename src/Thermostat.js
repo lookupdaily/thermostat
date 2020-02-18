@@ -1,5 +1,6 @@
 function Thermostat() {
   this._temperature = 20
+  this._powerSavingModeOn = true
 };
 
 Thermostat.prototype.increaseTemp = function(amount) {
@@ -12,3 +13,9 @@ Thermostat.prototype.decreaseTemp = function(amount) {
   }
 };
 
+Thermostat.prototype.isInPowerSavingMode = function() {
+  return this._powerSavingModeOn
+};
+
+thermostat = new Thermostat();
+console.log(thermostat.isInPowerSavingMode())

@@ -28,7 +28,14 @@ describe('Theromstat', function(){
   });
 
   it('has a power-saving setting which defaults to on', function() {
-    expect(thermostat.isInPowerSavingMode).toBeTrue()
+    expect(thermostat.isInPowerSavingMode()).toEqual(true);
+  });
+
+  it('has a maximum temp of 25 degrees when in powersaving mode', function() {
+    for (var i = 0; i < 6; i++) {
+      thermostat.increaseTemp();
+    };
+    expect(thermostat._temperature).toEqual(25);
   });
 
 });
