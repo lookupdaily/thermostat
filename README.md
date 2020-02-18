@@ -7,4 +7,8 @@ Thermostat Challenge (original README [here])(https://github.com/makersacademy/c
 As a homeowner, 
 so that I can set the temperature in my home, 
 I would like my thermostat set to a default of 20 degrees.
+
+As a homeowner's daughter
+so that I can warm up my bedroom,
+I would like to increase the set temperature by a certain amount.
 ```
