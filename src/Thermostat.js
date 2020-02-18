@@ -10,7 +10,7 @@ Thermostat.prototype.getTemperature = function() {
 };
 
 Thermostat.prototype.isMinimumTemperature = function() {
-  return (this._temperature === this.MIMIMUM_TEMP);
+  return (this._temperature === this.MINIMUM_TEMP);
 };
 
 Thermostat.prototype.isInPowerSavingMode = function() {
