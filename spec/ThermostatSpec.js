@@ -27,4 +27,8 @@ describe('Theromstat', function(){
     expect(thermostat._temperature).toEqual(10);
   });
 
+  it('has a power-saving setting which defaults to on', function() {
+    expect(thermostat.isInPowerSavingMode).toBeTrue()
+  });
+
 });

@@ -19,4 +19,8 @@ I would like to decrease the set temperature by a certain amount.
 As a landlord,
 so that the pipes don't freeze,
 I would like to set a minimum temperature of 10 degrees. 
+
+As a homeowner, 
+so that I can save on bills,
+I want a powersaving mode which will set maximum temperature to 25 degrees.
 ```
