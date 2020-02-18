@@ -1,14 +1,18 @@
 function Thermostat() {
-  this._temperature = 20
+  this.DEFAULT_TEMP = 20
+  this._temperature = this.DEFAULT_TEMP
+  this.MINIMUM_TEMP = 10
   this._powerSavingModeOn = true
 };
 
 Thermostat.prototype.increaseTemp = function(amount) {
-  this._temperature += 1
+  if (this._temperature < 25) {
+    this._temperature += 1
+  }
 };
 
 Thermostat.prototype.decreaseTemp = function(amount) {
-  if (this._temperature > 10) {
+  if (this._temperature > this.MINIMUM_TEMP) {
     this._temperature -= 1
   }
 };
@@ -16,6 +20,3 @@ Thermostat.prototype.decreaseTemp = function(amount) {
 Thermostat.prototype.isInPowerSavingMode = function() {
   return this._powerSavingModeOn
 };
-
-thermostat = new Thermostat();
-console.log(thermostat.isInPowerSavingMode())
