@@ -15,4 +15,8 @@ I would like to increase the set temperature by a certain amount.
 As a homeonwer,
 so that I can not waste money, 
 I would like to decrease the set temperature by a certain amount.
+
+As a landlord,
+so that the pipes don't freeze,
+I would like to set a minimum temperature of 10 degrees. 
 ```

@@ -11,13 +11,20 @@ describe('Theromstat', function(){
   });
 
   it('has an increase temperature button', function(){
-    thermostat.increaseTemp(5);
-    expect(thermostat._temperature).toEqual(25);
+    thermostat.increaseTemp();
+    expect(thermostat._temperature).toEqual(21);
   });
 
   it('has a decrease temperature button', function(){
-    thermostat.decreaseTemp(5);
-    expect(thermostat._temperature).toEqual(15);
+    thermostat.decreaseTemp();
+    expect(thermostat._temperature).toEqual(19);
+  });
+
+  it('has a minimum temperature', function(){
+    for (var i = 0; i < 11; i++) {
+      thermostat.decreaseTemp();
+    }
+    expect(thermostat._temperature).toEqual(10);
   });
 
 });
