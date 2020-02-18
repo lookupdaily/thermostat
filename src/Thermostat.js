@@ -5,18 +5,27 @@ function Thermostat() {
   this._powerSavingModeOn = true
 };
 
-Thermostat.prototype.increaseTemp = function(amount) {
+Thermostat.prototype.getTemperature = function() {
+  return this._temperature;
+};
+
+Thermostat.prototype.isMinimumTemperature = function() {
+  return (this._temperature === this.MIMIMUM_TEMP);
+};
+
+Thermostat.prototype.isInPowerSavingMode = function() {
+  return this._powerSavingModeOn
+};
+
+Thermostat.prototype.increaseTemp = function() {
   if (this._temperature < 25) {
     this._temperature += 1
   }
 };
 
-Thermostat.prototype.decreaseTemp = function(amount) {
-  if (this._temperature > this.MINIMUM_TEMP) {
-    this._temperature -= 1
+Thermostat.prototype.decreaseTemp = function() {
+  if (this.isMinimumTemperature()) {
+    return;
   }
-};
-
-Thermostat.prototype.isInPowerSavingMode = function() {
-  return this._powerSavingModeOn
+  return this._temperature -= 1
 };
