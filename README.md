@@ -11,4 +11,8 @@ I would like my thermostat set to a default of 20 degrees.
 As a homeowner's daughter
 so that I can warm up my bedroom,
 I would like to increase the set temperature by a certain amount.
+
+As a homeonwer,
+so that I can not waste money, 
+I would like to decrease the set temperature by a certain amount.
 ```

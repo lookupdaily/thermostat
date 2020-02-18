@@ -15,4 +15,9 @@ describe('Theromstat', function(){
     expect(thermostat._temperature).toEqual(25);
   });
 
+  it('has a decrease temperature button', function(){
+    thermostat.decreaseTemp(5);
+    expect(thermostat._temperature).toEqual(15);
+  });
+
 });
