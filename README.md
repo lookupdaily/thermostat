@@ -1,5 +1,5 @@
 ### [Makers Academy](http://www.makersacademy.com) - Week 5 Thermostat Project
-Thermostat Challenge (original README [here](https://github.com/makersacademy/course/blob/master/thermostat/thermostat_logic.md)
+Thermostat Challenge (original README [here])(https://github.com/makersacademy/course/blob/master/thermostat/thermostat_logic.md)
 
 ## User Stories
 
