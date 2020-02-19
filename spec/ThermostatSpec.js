@@ -56,7 +56,24 @@ describe('Theromstat', function() {
       thermostat.increaseTemp();
     };
     expect(thermostat.getTemperature()).toEqual(32);
+  });
+  
+  it ('returns a enery-usage of low when below 18 degrees', function() {
+    thermostat.decreaseTemp();
+    thermostat.decreaseTemp();
+    thermostat.decreaseTemp();
+    expect(thermostat.showEnergyUsage()).toEqual('low-usage');
+  });
+  
+  it ('returns an energy-usage of medium when below 25 degrees', function() {
+    expect(thermostat.showEnergyUsage()).toEqual('medium-usage');
+  })
 
+  it ('returns an energy-usage of high when above 25 degrees', function() {
+    for (var i = 0; i < 8; i++) {
+      thermostat.increaseTemp();
+    };
+    expect(thermostat.showEnergyUsage()).toEqual('high-usage');
   });
 
   it('can be reset to 20 degrees when reset button is clicked', function() {

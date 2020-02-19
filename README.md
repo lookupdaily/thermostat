@@ -27,4 +27,8 @@ I want a powersaving mode which will set maximum temperature to 25 degrees.
 As a homeowner,
 so that I can keep my children cold,
 I want a reset button that changes the temperature back to 20 degrees.
+
+As a homeowner,
+so that I can help save the planet,
+I want to ask about my thermostat's current energy useage.
 ```

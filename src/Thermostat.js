@@ -45,3 +45,16 @@ Thermostat.prototype.isInPowerSavingMode = function() {
 Thermostat.prototype.reset = function() {
   this._temperature = this.DEFAULT_TEMP
 };
+
+Thermostat.prototype.showEnergyUsage = function() {
+  var lowUsage = 18
+  var mediumUsage = 25
+
+  if (this._temperature < lowUsage) {
+    return 'low-usage'
+  } else if (this._temperature < mediumUsage) {
+    return 'medium-usage'
+  } else {
+    return 'high-usage'
+  };
+};
