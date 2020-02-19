@@ -8,15 +8,15 @@
   <body>
     <div class="container">
       <div class="container">
-        <form class="button">
-          <input type="submit" id="temp-up" value="+">
-        </form>
+        <div class="button">
+          <button type="button" id="temp-up">+</button>
+        <div>
         <div class="display">
-          <p id="temperature">Temp</p>
+          <p id="temperature"></p>
         </div>
-        <form class="button">
-          <input type="submit" id="temp-down" value="-">
-        </form>
+        <div class="button">
+          <button type="button" id="temp-down">-</button>
+        </div>
       </div>
       <div class="switch">
         <input type="checkbox" id="psm-switch">
@@ -28,11 +28,11 @@
         </form>
       </div>
     </div>
-    <script src="src/Thermostat.js"></script>
-    <script src="interface.js"></script>
     <script
 			  src="https://code.jquery.com/jquery-3.4.1.js"
 			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 			  crossorigin="anonymous"></script>
   </body>
+    <script src="src/Thermostat.js"></script>
+    <script src="src/interface.js"></script>
 </html>

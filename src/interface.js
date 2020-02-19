@@ -1,15 +1,15 @@
 $(document).ready(function() {
   var thermostat = new Thermostat();
-  updateTemperature();
+  displayTemperature();
 
   $('#temp-up').on('click', function() {
     thermostat.increaseTemp();
-    updateTemperature();
+    displayTemperature();
   });
 
   $('#temp-down').on('click', function() {
     thermostat.decreaseTemp();
-    updateTemperature();
+    displayTemperature();
   });
 
   $('#psm-switch').on('click', function() {
@@ -18,11 +18,11 @@ $(document).ready(function() {
 
   $('#reset').on('click', function() {
     thermostat.reset();
-    updateTemperature();
+    displayTemperature();
   })
 
-  function updateTemperature() {
+  function displayTemperature() {
     $('#temperature').text(thermostat.getTemperature());
-    $('#temperature').attr('class', thermostat.showEnergyUsage());
+    // $('#temperature').attr('class', thermostat.showEnergyUsage());
   };
 });
