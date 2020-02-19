@@ -23,4 +23,8 @@ I would like to set a minimum temperature of 10 degrees.
 As a homeowner, 
 so that I can save on bills,
 I want a powersaving mode which will set maximum temperature to 25 degrees.
+
+As a homeowner,
+so that I can keep my children cold,
+I want a reset button that changes the temperature back to 20 degrees.
 ```
