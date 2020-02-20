@@ -39,8 +39,6 @@ header {
   height: 800px;
   padding: 0;
   text-align: center;
-  border-radius: 100;
-  margin-bottom: 50px;
 }
 
 .low-usage {
@@ -140,7 +138,7 @@ input:checked + .slider:before {
 
 #reset {
   border-radius: 100px;
-  background-color: red;
+  background-color:#white;
   width: 15px;
   height: 15px;
   border: none;
@@ -149,12 +147,12 @@ input:checked + .slider:before {
 
 #reset:hover {
   border: 4px solid;
-  border-color: #c2c2c2;
+  border-color: red;
   padding: 2px;
 }
 
 #reset:active {
   width: 20px;
   height: 20px;
-  background-color: #c2c2c2;
+  background-color: red;
 }
