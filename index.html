@@ -3,31 +3,40 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet"> 
     <title>Haydon't touch that Thermostat</title>
   </head>
   <body>
     <div class="container">
-      <div class="container">
-        <div class="button">
+      <div class="interface">
+        <div class="temp-control">
           <button type="button" id="temp-up">+</button>
         <div>
         <div class="display">
-          <p id="temperature"></p>
+          <h2 id="temperature"></h2>
         </div>
-        <div class="button">
+        <div class="temp-control">
           <button type="button" id="temp-down">-</button>
         </div>
       </div>
       <div class="switch">
-        <input type="checkbox" id="psm-switch">
+        <input type="checkbox" data-role="flipswitch" id="psm-switch" checked>
         <span class="round slider"></span>
+        <label for="psm-switch">power saving mode</label>
       </div>
       <div class="button">
-        <form>
+        <div>
           <input type="submit" id="reset" value="RESET">
-        </form>
+        </div>
       </div>
     </div>
+    <p>Wind speed:</p>
+    <p>
+      <span id="weather-status"></span>
+      mph
+    </p>
+    
+
     <script
 			  src="https://code.jquery.com/jquery-3.4.1.js"
 			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="

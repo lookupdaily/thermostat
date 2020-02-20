@@ -1,16 +1,37 @@
 body {
-  background-color: pink;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 4rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+  padding: 50 5;
+}
+
+.interface {
+  width: 800px;
+  text-align: center;
 }
 
 .low-usage {
-  color: green;
+  background-color: #dcedc8;
 }
 
 .medium-usage {
-  color: black;
+  background-color: #f5f5f5;
 }
 
 .high-usage {
-  color: red;
+  background-color: #ffe0b2;
 }
 
+.temp-control.button {
+  display: inline-block;
+  width: 100%
+}

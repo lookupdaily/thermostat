@@ -43,9 +43,9 @@ Thermostat.prototype.showEnergyUsage = function() {
   var lowUsage = 18
   var mediumUsage = 25
 
-  if (this._temperature < lowUsage) {
+  if (this._temperature <= lowUsage) {
     return 'low-usage'
-  } else if (this._temperature < mediumUsage) {
+  } else if (this._temperature <= mediumUsage) {
     return 'medium-usage'
   } else {
     return 'high-usage'
