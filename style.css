@@ -49,12 +49,12 @@ header {
 }
 
 .medium-usage {
-  background-color: #fff8e1;
+  background-color: #fffffb;
   color: #5f4339;
 }
 
 .high-usage {
-  background-color: #ffab91;
+  background-color: #ffccbc;
   color: #c63f17;
 }
 
