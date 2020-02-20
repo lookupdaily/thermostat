@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   function displayTemperature() {
     $('#temperature').text(thermostat.getTemperature());
-    $('body').attr('class', thermostat.showEnergyUsage());
+    $('#interface').attr('class', thermostat.showEnergyUsage());
   };
 
   function displayWeather() { 

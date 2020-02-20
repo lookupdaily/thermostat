@@ -7,41 +7,45 @@
     <title>Haydon't touch that Thermostat</title>
   </head>
   <body>
-    <div class="container">
-      <div class="interface">
-        <div class="temp-control">
-          <button type="button" id="temp-up">+</button>
-        <div>
-        <div class="display">
-          <h2 id="temperature"></h2>
-        </div>
-        <div class="temp-control">
-          <button type="button" id="temp-down">-</button>
-        </div>
+    <header>
+      <label class="switch">
+        <input type="checkbox" id="psm-switch" checked>
+        <span class="slider round"></span>
+      </label>
+      <h4>power saving mode</h4>
+    </header>
+    <article class="container">
+      <!-- <h1>Thermostat</h1> -->
+      <div id="width">
+        <section id="interface">
+            <button type="button" class="control" id="temp-up">+</button>
+          <div id="display">
+            <h2 id="temperature"></h2>
+          </div>
+            <button type="button" class="control" id="temp-down">-</button>
+        </section>
       </div>
-      <div class="switch">
-        <input type="checkbox" data-role="flipswitch" id="psm-switch" checked>
-        <span class="round slider"></span>
-        <label for="psm-switch">power saving mode</label>
-      </div>
-      <div class="button">
-        <div>
-          <input type="submit" id="reset" value="RESET">
+      <footer id="bottom-panel">
+        <div class ="circle">
+          <h4>RESET</h4>
+          <button type="button" id="reset"></button>
         </div>
-      </div>
-    </div>
+      </footer>
+    <!-- <section>
+    <h3>Weather</h3>
     <p>Wind speed:</p>
     <p>
       <span id="weather-status"></span>
       mph
     </p>
-    
-
+  </section> -->
+  </article>
     <script
 			  src="https://code.jquery.com/jquery-3.4.1.js"
 			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-			  crossorigin="anonymous"></script>
-  </body>
+        crossorigin="anonymous">
+    </script>
     <script src="src/Thermostat.js"></script>
     <script src="src/interface.js"></script>
+  </body>
 </html>
