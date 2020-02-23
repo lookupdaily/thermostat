@@ -1,7 +1,7 @@
-### [Makers Academy](http://www.makersacademy.com) - Week 5 Thermostat Project
-I created this programme as part of a challenge at [Makers Academy](https://github.com/makersacademy). 
+# Thermostat
+I created this programme as part of a challenge at [Makers Academy](http://www.makersacademy.com). 
 
-Developed using TDD and pair programming, working with several different pairs on rotation over a week. 
+Developed using TDD and pair programming, working with several different pairs on rotation over several afternoons. 
 
 The app has been created with JavaScript, JQuery, CSS and HTML.
 
