@@ -1,5 +1,24 @@
 ### [Makers Academy](http://www.makersacademy.com) - Week 5 Thermostat Project
-Thermostat Challenge (original README [here])(https://github.com/makersacademy/course/blob/master/thermostat/thermostat_logic.md)
+I created this programme as part of a challenge at [Makers Academy](https://github.com/makersacademy). 
+
+Developed using TDD and pair programming, working with several different pairs on rotation over a week. 
+
+The app has been created with JavaScript, JQuery, CSS and HTML.
+
+## Getting Started ##
+
+1. Fork this repo, and clone to your local machine. Navigate into the folder.
+2. Open `index.html` in your browser.
+
+## Running tests ##
+
+1. Open `SpecRunner.html` in your browser
+
+## Specification ##
+
+See original challenge instructions [here](https://github.com/makersacademy/course/tree/master/thermostat) (private repo).
+
+User stories below developed from challenge specification.
 
 ## User Stories
 
@@ -13,7 +32,7 @@ so that I can warm up my bedroom,
 I would like to increase the set temperature by a certain amount.
 
 As a homeonwer,
-so that I can not waste money, 
+so that I don't waste money, 
 I would like to decrease the set temperature by a certain amount.
 
 As a landlord,
@@ -24,11 +43,15 @@ As a homeowner,
 so that I can save on bills,
 I want a powersaving mode which will set maximum temperature to 25 degrees.
 
+As a homeowner's daughter, 
+so that I turn the thermostat up to the max of 32,
+I would like to be able to turn off power saving mode.
+
 As a homeowner,
-so that I can keep my children cold,
+so that everyone can wear their jumpers inside,
 I want a reset button that changes the temperature back to 20 degrees.
 
 As a homeowner,
 so that I can help save the planet,
-I want to ask about my thermostat's current energy useage.
+I would like to see my thermostat's current energy useage.
 ```
