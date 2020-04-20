@@ -51,7 +51,6 @@ describe('Theromstat', function() {
 
   it('has a maximum temp of 32 degrees when not in power saving mode', function() {
     thermostat.switchMode();
-    console.log(thermostat.isInPowerSavingMode());
     for (var i = 0; i < 13; i++) {
       thermostat.increaseTemp();
     };
@@ -70,9 +69,9 @@ describe('Theromstat', function() {
   })
 
   it ('returns an energy-usage of high when above 25 degrees', function() {
-    for (var i = 0; i < 8; i++) {
-      thermostat.increaseTemp();
-    };
+    thermostat._temperature = 25;
+    thermostat.switchMode();
+    thermostat.increaseTemp();
     expect(thermostat.showEnergyUsage()).toEqual('high-usage');
   });
 
