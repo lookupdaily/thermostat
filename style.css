@@ -68,6 +68,20 @@ header {
   border: none;
 }
 
+.control.active.focus,
+.control.active:focus,
+.control.focus,
+.control.focus:active,
+.control:active:focus,
+.control:focus,
+.control:active {
+  -webkit-box-shadow: none;
+  outline: none;
+  outline-offset: 0;
+  border: none;
+  box-shadow: none;
+}
+
 #bottom-panel {
   padding: 70px;
 }
