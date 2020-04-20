@@ -29,8 +29,8 @@ header {
 .container {
   margin: auto;
   margin-bottom: 50px;
-  width: 800px;
-  height: 50vh;
+  max-width: 65%;
+  height: 40vh;
   padding: 60px;
   border-radius: 5px;
 }
