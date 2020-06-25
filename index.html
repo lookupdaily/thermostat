@@ -7,35 +7,28 @@
     <title>Thermostat</title>
   </head>
   <body>
-    <header>
-      <label class="switch">
-        <input type="checkbox" id="psm-switch" checked>
-        <span class="slider round"></span>
-      </label>
-      <h4>power saving mode</h4>
-    </header>
-    <article class="container">
-      <!-- <h1>Thermostat</h1> -->
-      <div id="width">
-        <section id="interface">
-            <div class="control-container">
-              <button type="button" class="control" id="temp-up">+</button>
-            </div>
-          <div id="display">
-            <h2 id="temperature"></h2>
-          </div>
-            <div class="control-container">
-              <button type="button" class="control" id="temp-down">-</button>
-            </div>
-        </section>
+    <div class="container">
+      <!-- <article class="content"> -->
+      <header>
+        <label class="switch">
+          <input type="checkbox" id="psm-switch" checked>
+          <span class="slider round"></span>
+        </label>
+        <h4>power saving mode</h4>
+      </header>
+      <div id="interface">
+        <button type="button" class="control" id="temp-up">+</button>
+        <div id="display">
+          <h2 id="temperature"></h2>
+        </div>
+        <button type="button" class="control" id="temp-down">-</button>
       </div>
       <footer id="bottom-panel">
-        <div class ="circle">
-          <h4>RESET</h4>
-          <button type="button" id="reset"></button>
-        </div>
+        <p>RESET</p>
+        <button type="button" id="reset"></button>
       </footer>
-  </article>
+      <!-- </article> -->
+    </div>
     <script
 			  src="https://code.jquery.com/jquery-3.4.1.js"
 			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="

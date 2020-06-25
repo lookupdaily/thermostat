@@ -2,8 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #546e7a;
-  text-align: center;
 }
 
 h1 {
@@ -16,14 +14,10 @@ h2 {
   font-size: 4rem;
 }
 
-h4 {
+p {
   font-size: 0.8rem;
   font-weight: 1;
   color: #fff;
-  margin: 0;
-}
-
-header {
   margin: 0;
 }
 
@@ -36,23 +30,34 @@ button {
   -webkit-box-shadow: none;
   outline: none;
   outline-offset: 0;
-  box-shadow: 2;
   border: none;
 }
 
-.container {
-  margin: auto;
-  margin-bottom: 50px;
-  max-width: 50%;
-  height: 40vh;
-  padding: 60px;
-  border-radius: 15px;
+header,
+footer {
+  flex-grow: 1;
+  margin: 20px;
 }
 
-.interface {
-  height: 800px;
-  padding: 0;
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #546e7a;
   text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#interface {
+  height: 60%;
+  width: 50%;
+  border-radius: 5px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 2;
 }
 
 .low-usage {
@@ -71,48 +76,37 @@ button {
 }
 
 .control {
-  border-radius: 100%;
-  border-color: #d0d9de;
-  border: 3px;
-  font-size: 3rem;
-  font-weight: 1;
+  border-radius: 50px;
+  /* border: solid 2px #cccbca; */
+  /* background-color: #dcdddc33; */
   margin: auto;
+  font-size: 3rem;
   width: 4.5rem;
   height: 4.5rem;
+  box-shadow: 0 0 3px 2px #22222221;
+  
+  /* transition: all 300ms cubic-bezier(0.230, 1.000, 0.320, 1.000) */
 }
 
-.control-container {
-  display: flex;
-  width: 100%;
-  height: 150px;
-  margin-bottom: 0;
+.control:hover,
+.control:focus {
+  border: solid 2px white;
+  box-shadow: 0 0 7px 2px #22222221, inset 2px 0 8px 3px #22222221;
+  background-color: #ffffffa8;
 }
 
-
-.control.focus,
-.control:active:focus,
-.control:focus,
-.control:hover {
-  -webkit-box-shadow: none;
-  outline: none;
-  outline-offset: 0;
-  border: none;
-  box-shadow: none;
-  background-color: #546e7a;
-  color: white;
+.control:active {
+  box-shadow: 0 0 5px 1px #22222221, inset 2px 0 11px 6px #22222221;
+  background-color: #ffffff;
 }
 
-#bottom-panel {
-  padding: 70px;
-}
-
- /* The switch - the box around the slider */
- .switch {
+/* The switch - the box around the slider */
+.switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
-  margin: 15px;
+  margin: 10px;
 }
 
 /* Hide default HTML checkbox */
@@ -178,28 +172,20 @@ input:checked + .slider:before {
 #reset {
   border-radius: 100px;
   background-color: white;
-  width: 15px;
-  height: 15px;
+  width: 2rem;
+  height: 2rem;
   border: none;
-  margin: 0
+  margin: 1rem;
+  box-shadow: inset 0 0 4px 1px #787878;
 }
 
-#reset:hover {
-  border: 4px solid;
-  border-color: red;
+#reset:hover,
+#reset:focus {
+  border: 0.5rem solid;
+  border-color: #c63f17;
   padding: 2px;
 }
 
 #reset:active {
-  width: 20px;
-  height: 20px;
-  background-color: red;
-}
-
-@media all and (max-width: 600px) {
-
-  .container {
-    max-width: 90%;
-  }
-
+  border: 0.9rem solid #c63f17;
 }
