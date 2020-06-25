@@ -51,7 +51,7 @@ footer {
 
 #interface {
   height: 60%;
-  width: 50%;
+  width: 80%;
   border-radius: 5px;
   align-self: center;
   display: flex;
@@ -188,4 +188,10 @@ input:checked + .slider:before {
 
 #reset:active {
   border: 0.9rem solid #c63f17;
+}
+
+@media all and (min-width: 800px) {
+  #interface {
+    width:50%;
+  }
 }
