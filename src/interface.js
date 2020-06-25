@@ -15,11 +15,6 @@ $(document).ready(function() {
 
   $('#psm-switch').on('click', function() {
     thermostat.switchMode();
-    // if($(thermostat).find('input.psm-switch').is(':checked')) {
-    //   $(mainParent).addClass('active');
-    // } else {
-    //   $(mainParent).removeClass('active');
-    // }
   });
 
   $('#reset').on('click', function() {
