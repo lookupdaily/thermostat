@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet"> 
-    <title>Haydon't touch that Thermostat</title>
+    <title>Thermostat</title>
   </head>
   <body>
     <header>
@@ -18,11 +18,15 @@
       <!-- <h1>Thermostat</h1> -->
       <div id="width">
         <section id="interface">
-            <button type="button" class="control" id="temp-up">+</button>
+            <div class="control-container">
+              <button type="button" class="control" id="temp-up">+</button>
+            </div>
           <div id="display">
             <h2 id="temperature"></h2>
           </div>
-            <button type="button" class="control" id="temp-down">-</button>
+            <div class="control-container">
+              <button type="button" class="control" id="temp-down">-</button>
+            </div>
         </section>
       </div>
       <footer id="bottom-panel">

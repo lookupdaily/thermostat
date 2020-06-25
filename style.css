@@ -26,13 +26,27 @@ h4 {
 header {
   margin: 0;
 }
+
+button {
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+  outline: none;
+  outline-offset: 0;
+  box-shadow: 2;
+  border: none;
+}
+
 .container {
   margin: auto;
   margin-bottom: 50px;
-  max-width: 65%;
+  max-width: 50%;
   height: 40vh;
   padding: 60px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .interface {
@@ -57,29 +71,35 @@ header {
 }
 
 .control {
-  display: inline-block;
-  width: 100%;
-  height: 150px;
-  font: 'Roboto', sans-serif;
-  font-size: 2rem;
+  border-radius: 100%;
+  border-color: #d0d9de;
+  border: 3px;
+  font-size: 3rem;
   font-weight: 1;
-  background: transparent;
-  margin-bottom: 0;
-  border: none;
+  margin: auto;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
-.control.active.focus,
-.control.active:focus,
+.control-container {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 0;
+}
+
+
 .control.focus,
-.control.focus:active,
 .control:active:focus,
 .control:focus,
-.control:active {
+.control:hover {
   -webkit-box-shadow: none;
   outline: none;
   outline-offset: 0;
   border: none;
   box-shadow: none;
+  background-color: #546e7a;
+  color: white;
 }
 
 #bottom-panel {
@@ -131,6 +151,11 @@ input:checked + .slider {
   background-color: #c5e1a5;
 }
 
+input:focus {
+  background-color: #92998a;
+  box-shadow: 0 0 1px #92998a;
+}
+
 input:focus + .slider {
   box-shadow: 0 0 1px #c5e1a5;
 }
@@ -152,7 +177,7 @@ input:checked + .slider:before {
 
 #reset {
   border-radius: 100px;
-  background-color:#white;
+  background-color: white;
   width: 15px;
   height: 15px;
   border: none;
@@ -169,4 +194,12 @@ input:checked + .slider:before {
   width: 20px;
   height: 20px;
   background-color: red;
+}
+
+@media all and (max-width: 600px) {
+
+  .container {
+    max-width: 90%;
+  }
+
 }
