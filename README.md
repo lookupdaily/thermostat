@@ -5,6 +5,8 @@ Developed using TDD and pair programming, working with several different pairs o
 
 The app has been created with JavaScript, JQuery, CSS and HTML.
 
+![thermostat in use](public/assets/thermostat-mockup.png)
+
 ## Getting Started ##
 
 1. Fork this repo, and clone to your local machine. Navigate into the folder.
