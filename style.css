@@ -4,11 +4,6 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-size: 1.5rem;
-  color: #fff
-}
-
 h2 {
   font-family: 'Roboto Slab', serif;
   font-size: 4rem;
@@ -76,7 +71,7 @@ footer {
 }
 
 .control {
-  border-radius: 50px;
+  border-radius: 100%;
   /* border: solid 2px #cccbca; */
   /* background-color: #dcdddc33; */
   margin: auto;
@@ -172,11 +167,11 @@ input:checked + .slider:before {
 #reset {
   border-radius: 100px;
   background-color: white;
-  width: 2rem;
-  height: 2rem;
+  height: 26px;
+  width: 26px;
   border: none;
   margin: 1rem;
-  box-shadow: inset 0 0 4px 1px #787878;
+  box-shadow: inset 0 0 3px 0 #787878;
 }
 
 #reset:hover,
@@ -187,11 +182,13 @@ input:checked + .slider:before {
 }
 
 #reset:active {
-  border: 0.9rem solid #c63f17;
+  border: none;
+  background-color: #c63f17;
+  box-shadow: inset 2px 0 5px 2px #00000093;
 }
 
 @media all and (min-width: 800px) {
   #interface {
-    width:50%;
+    width: 50%;
   }
 }
