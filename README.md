@@ -3,7 +3,7 @@ I created this programme as part of a challenge at [Makers Academy](http://www.m
 
 Developed using TDD and pair programming, working with several different pairs on rotation over several afternoons. 
 
-The app has been created with JavaScript, JQuery, CSS and HTML.
+The app has been created with JavaScript, JQuery, CSS and HTML. Test driven using Jasmine.
 
 ![thermostat in use](public/assets/thermostat-mockup.png)
 
@@ -11,6 +11,7 @@ The app has been created with JavaScript, JQuery, CSS and HTML.
 
 1. Fork this repo, and clone to your local machine. Navigate into the folder.
 2. Open `index.html` in your browser.
+3. Click the buttons to increase and decrease temperature. Try switching off power saving mode to see the full temperature range.
 
 ## Running tests ##
 
